@@ -17,7 +17,12 @@ module.exports = {
       backgroundImage: {
         mobile: "url('/images/bg-pattern-mobile.svg')",
         desktop: "url('/images/bg-pattern-desktop.svg')",
+        heromobile: "url('/images/illustration-woman-online-mobile.svg')",
+        herodesktop: "url('/images/illustration-woman-online-desktop.svg')",
       },
+      backgroundPosition: {
+        original: 'left -40rem top -20rem',
+      }
     },
   },
   plugins: [],

@@ -13,82 +13,106 @@
     />
   </head>
   <body
-    class="bg-gradient-to-b from-softViolet to-softBlue bg-no-repeat flex justify-center items-center"
+    class="bg-gradient-to-b from-softViolet to-softBlue bg-no-repeat h-screen"
   >
-    <main class="h-full">
+    <main class="h-full flex justify-center items-center mt-4 mb-4">
       <div
         id="app"
-        class="bg-white bg-mobile bg-no-repeat bg-top text-xs font-kumbhSans mt-40 mb-20 px-5 pt-32 pb-12 rounded-3xl drop-shadow-2xl relative"
+        class="w-[300px] lg:w-[840px] bg-white bg-mobile lg:bg-desktop bg-no-repeat bg-top lg:bg-original text-xs font-kumbhSans mt-40 mb-20 px-5 pt-32 pb-12 rounded-3xl drop-shadow-2xl relative lg:flex lg:justify-between lg:items-center lg:space-x-8 lg:p-20"
       >
-        <img
-          class="absolute -top-28 left-8 w-4/5"
-          src="./images/illustration-woman-online-mobile.svg"
-          alt=""
-        />
-        <h1
-          class="text-veryDarkDesaturatedBlue text-4xl font-extrabold text-center py-3"
-        >
-          FAQ
-        </h1>
-        <div class="border-b border-lightGrayishBlue pt-3 pb-3">
-          <div class="flex justify-between items-center space-x-8">
-            <p class="">How many team members can I invite?</p>
-            <div class="">
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </div>
-          </div>
-          <p class="hidden pt-3 pr-16">
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
-          </p>
+        <div class="lg:basis-1/2">
+          <img
+            class="absolute -top-28 left-8 w-4/5 lg:top-auto lg:hidden lg:bottom-10 lg:-left-16 lg:w-6/12"
+            src="./images/illustration-woman-online-mobile.svg"
+            alt=""
+          />
+          <img
+            class="hidden lg:block lg:absolute lg:-left-16 lg:bottom-16 lg:w-6/12"
+            src="./images/illustration-woman-online-desktop.svg"
+            alt=""
+          />
+          <img
+            class="hidden lg:block lg:absolute lg:-left-16 lg:bottom-32 lg:w-2/12"
+            src="./images/illustration-box-desktop.svg"
+            alt=""
+          />
         </div>
-        <div class="border-b border-lightGrayishBlue pt-3 pb-3">
-          <div class="flex justify-between items-center space-x-4">
-            <p class="">What is the maximum file upload size?</p>
-            <div class="">
-              <img src="./images/icon-arrow-down.svg" alt="" />
+        <div class="lg:basis-1/2">
+          <h1
+            class="text-veryDarkDesaturatedBlue text-4xl font-extrabold text-center py-3"
+          >
+            FAQ
+          </h1>
+          <div class="border-b border-lightGrayishBlue pt-3 pb-3">
+            <div class="flex justify-between items-center space-x-8 peer">
+              <p class="question hover:text-softRed hover:cursor-pointer">
+                How many team members can I invite?
+              </p>
+              <div class="hover:cursor-pointer">
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </div>
             </div>
+            <p class="answer hidden pt-3 pr-12 text-darkGrayishBlue">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
           </div>
-          <p class="hidden pt-3 pr-16">
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
-        </div>
-        <div class="border-b border-lightGrayishBlue pt-3 pb-3">
-          <div class="flex justify-between items-center space-x-4">
-            <p class="">How do I reset my password?</p>
-            <div class="">
-              <img src="./images/icon-arrow-down.svg" alt="" />
+          <div class="border-b border-lightGrayishBlue pt-3 pb-3">
+            <div class="flex justify-between items-center space-x-4">
+              <p class="question hover:text-softRed hover:cursor-pointer">
+                What is the maximum file upload size?
+              </p>
+              <div class="hover:cursor-pointer">
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </div>
             </div>
+            <p class="answer hidden pt-3 pr-12 text-darkGrayishBlue">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
           </div>
-          <p class="hidden pt-3 pr-16">
-            Click “Forgot password” from the login page or “Change password”
-            from your profile page. A reset link will be emailed to you.
-          </p>
-        </div>
-        <div class="border-b border-lightGrayishBlue pt-3 pb-3">
-          <div class="flex justify-between items-center space-x-4">
-            <p class="">Can I cancel my subscription?</p>
-            <div class="">
-              <img src="./images/icon-arrow-down.svg" alt="" />
+          <div class="border-b border-lightGrayishBlue pt-3 pb-3">
+            <div class="flex justify-between items-center space-x-4">
+              <p class="question hover:text-softRed hover:cursor-pointer">
+                How do I reset my password?
+              </p>
+              <div class="hover:cursor-pointer">
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </div>
             </div>
+            <p class="answer hidden pt-3 pr-12 text-darkGrayishBlue">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
           </div>
-          <p class="hidden pt-3 pr-16">
-            Yes! Send us a message and we’ll process your request no questions
-            asked.
-          </p>
-        </div>
-        <div class="border-b border-lightGrayishBlue pt-3 pb-3">
-          <div class="flex justify-between items-center space-x-4">
-            <p class="">Do you provide additional support?</p>
-            <div class="">
-              <img src="./images/icon-arrow-down.svg" alt="" />
+          <div class="border-b border-lightGrayishBlue pt-3 pb-3">
+            <div class="flex justify-between items-center space-x-4">
+              <p class="question hover:text-softRed hover:cursor-pointer">
+                Can I cancel my subscription?
+              </p>
+              <div class="hover:cursor-pointer">
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </div>
             </div>
+            <p class="answer hidden pt-3 pr-12 text-darkGrayishBlue">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
           </div>
-          <p class="hidden pt-3 pr-16">
-            Chat and email support is available 24/7. Phone lines are open
-            during normal business hours.
-          </p>
+          <div class="border-b border-lightGrayishBlue pt-3 pb-3">
+            <div class="flex justify-between items-center space-x-4">
+              <p class="question hover:text-softRed hover:cursor-pointer">
+                Do you provide additional support?
+              </p>
+              <div class="hover:cursor-pointer">
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </div>
+            </div>
+            <p class="answer hidden pt-3 pr-12 text-darkGrayishBlue">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
         </div>
       </div>
     </main>
