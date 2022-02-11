@@ -21,7 +21,7 @@ module.exports = {
         herodesktop:  "url('/images/illustration-woman-online-desktop.svg')",
       },
       backgroundPosition: {
-        original: 'left -37rem top -20rem',
+        original: 'left -20rem top -10rem',
         secondary: 'left -6rem top 4rem',
       }
     },
