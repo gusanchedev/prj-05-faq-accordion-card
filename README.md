@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io](https://your-solution-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/faq-accordion-card-challenge-with-tailwind-and-js-ykHImZvBL)
 - Live Site URL: [Vercel](https://prj-05-faq-accordion-card.vercel.app/)
 
 ## My process
