@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). 
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
 
 ## Table of contents
 
@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/ScreenshotFrontendMentorFAQAccordionCard.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor.io](https://your-solution-url.com)
+- Live Site URL: [Vercel](https://prj-05-faq-accordion-card.vercel.app/)
 
 ## My process
 
@@ -44,46 +44,82 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [tailwindCSS](https://tailwindcss.com/) - CSS library
 
 ### What I learned
 
-
+Using multiple images in same container with position absolute:
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="lg:basis-1/2">
+  <img
+    class="hidden lg:block lg:absolute lg:w-11/12 lg:-top-48 lg:-left-[410px]"
+    src="./images/bg-pattern-desktop.svg"
+    alt=""
+  />
+  <img
+    class="absolute -top-28 left-8 w-4/5 lg:top-auto lg:hidden lg:bottom-10 lg:-left-16 lg:w-6/12"
+    src="./images/illustration-woman-online-mobile.svg"
+    alt=""
+  />
+  <img
+    class="hidden lg:block lg:absolute lg:-left-[115px] lg:top-[195px] lg:w-3/12"
+    src="./images/illustration-box-desktop.svg"
+    alt=""
+  />
+</div>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
+How to customize the position for background images:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+module.exports = {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      backgroundPosition: {
+        original: "left -20rem top -10rem",
+        secondary: "left -6rem top 4rem",
+      },
+    },
+  },
+  plugins: [],
+};
 ```
+How to rotate image at click events in Javascript:
+```js
+ if (!clickedElement) {
+      e.target.style.fontWeight = "bold";
+      answers[index].style.display = "block";
+      icons[index].style.transform = "rotate(180deg)";
+      clickedElement = !clickedElement;
+
+    } else {
+      e.target.style.fontWeight = "normal";
+      answers[index].style.display = "none";
+      icons[index].style.transform = "rotate(360deg)";
+      clickedElement = !clickedElement;
+
+    }
+```
+
 ### Continued development
 
+Future projects will be developed using TailwindCSS and vanilla Javascript when interactivity must be included.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [tailwindcss -Customizing your theme - Background position](https://tailwindcss.com/docs/background-position#customizing-your-theme)
+- [Customizing Colors in TailwindCSS](https://tailwindcss.com/docs/customizing-colors) - Adding personalized color names to be used in tailwindcss.
+- [Customizing Fonts in TailwindCSS](https://tailwindcss.com/docs/font-family#using-custom-values) - Adding Google fonts to be used in tailwindcss.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Gustavo Sanchez](https://www.gusanche.dev)
+- Frontend Mentor - [@gusanchedev](https://www.frontendmentor.io/profile/gusanchedev)
+- Github - [@gusanchedev](https://www.github.com/gusanchedev)
+- Twitter - [@gusanchedev](https://www.twitter.com/gusanchedev)
+- Linkedin - [gusanchedev](https://www.linkedin.com/in/gusanchedev/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks to Mariapaz for being my friend and support 💙
